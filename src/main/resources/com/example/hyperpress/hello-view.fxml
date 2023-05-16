@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane fx:controller="com.example.hyperpress.huffman1.OpenController" prefHeight="675.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <AnchorPane prefHeight="23.0" prefWidth="600.0" style="-fx-background-color: gray;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="208.0" prefHeight="26.0" prefWidth="1200.0" style="-fx-divider-color: transparent;" text="HyperPress" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <right>
+      <AnchorPane prefHeight="649.0" prefWidth="519.0" style="-fx-border-color: black; -fx-border-width: 2;" BorderPane.alignment="CENTER">
+         <children>
+            <BorderPane prefHeight="804.0" prefWidth="519.3333333333334" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <right>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <center>
+                        <BorderPane prefHeight="246.0" prefWidth="497.0" BorderPane.alignment="CENTER">
+                           <bottom>
+                              <AnchorPane  prefHeight="219.0" prefWidth="305.0" style="-fx-border-color: black; -fx-border-width: 2;" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Button fx:id="open_file" layoutX="72.0" layoutY="29.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="161.0" text="Open file to read from" onAction="#onOpenFileToRead"/>
+                                    <Button layoutX="77.0" layoutY="127.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="151.0" text="Open file to write to" />
+                                 </children></AnchorPane>
+                           </bottom>
+                           <center>
+                              <AnchorPane prefHeight="99.0" prefWidth="305.0" style="-fx-border-color: black; -fx-border-width: 2;" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <RadioButton alignment="CENTER_RIGHT" layoutX="37.0" layoutY="34.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="179.0" selected="true" text="Compress">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                       <toggleGroup>
+                                          <ToggleGroup fx:id="two" />
+                                       </toggleGroup>
+                                    </RadioButton>
+                                    <RadioButton alignment="CENTER_RIGHT" layoutX="37.0" layoutY="79.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="197.0" text="Decompress" toggleGroup="$two">
+                                       <font>
+                                          <Font size="25.0" />
+                                       </font>
+                                    </RadioButton>
+                                 </children></AnchorPane>
+                           </center>
+                        </BorderPane>
+                     </center>
+                     <top>
+                        <AnchorPane minWidth="-Infinity" prefHeight="200.0" prefWidth="305.0" style="-fx-border-color: black; -fx-border-width: 2;" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label alignment="CENTER" layoutX="58.0" layoutY="14.0" prefHeight="18.0" prefWidth="190.0" text="Implementation">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                              <RadioButton alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="50.0" layoutY="64.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="135.0" selected="true" text="Own" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="one" />
+                                 </toggleGroup>
+                              </RadioButton>
+                              <RadioButton alignment="CENTER_RIGHT" layoutX="50.0" layoutY="120.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="151.0" text="Foreign" toggleGroup="$one">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </RadioButton>
+                           </children></AnchorPane>
+                     </top>
+                     <bottom>
+                        <AnchorPane prefHeight="87.0" prefWidth="305.0" style="-fx-border-color: black; -fx-border-width: 2;" BorderPane.alignment="CENTER">
+                           <children>
+                              <Button layoutX="64.0" layoutY="14.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="177.0" text="Start">
+                                 <font>
+                                    <Font size="23.0" />
+                                 </font>
+                              </Button>
+                           </children></AnchorPane>
+                     </bottom>
+                  </BorderPane>
+               </right>
+               <center>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <top>
+                        <AnchorPane prefHeight="56.0" prefWidth="120.0" style="-fx-border-color: black; -fx-border-width: 2;" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" layoutY="2.0" prefHeight="56.0" prefWidth="210.66666666666666" text="Stat" textAlignment="CENTER" AnchorPane.bottomAnchor="2.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                                 <font>
+                                    <Font size="33.0" />
+                                 </font>
+                              </Label>
+                           </children></AnchorPane>
+                     </top>
+                     <bottom>
+                        <AnchorPane prefHeight="285.0" prefWidth="316.0" style="-fx-border-color: black; -fx-border-width: 2;" BorderPane.alignment="CENTER">
+                           <children>
+                              <Label layoutX="64.0" layoutY="56.0" text="Source:">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="34.0" layoutY="143.0" prefHeight="36.0" prefWidth="141.0" text="Destination:">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Label>
+                           </children></AnchorPane>
+                     </bottom>
+                     <center>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <bottom>
+                              <AnchorPane prefHeight="133.0" prefWidth="65.0" style="-fx-border-color: black; -fx-border-width: 2;" BorderPane.alignment="CENTER" />
+                           </bottom>
+                           <center>
+                              <AnchorPane prefHeight="247.0" prefWidth="316.0" style="-fx-border-color: black; -fx-border-width: 2;" BorderPane.alignment="CENTER" />
+                           </center>
+                        </BorderPane>
+                     </center>
+                  </BorderPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="504.0" style="-fx-border-color: black; -fx-border-width: 2;" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

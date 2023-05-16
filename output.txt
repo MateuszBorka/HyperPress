@@ -1,8 +1,0 @@
-d 00
-f 01
-s 10
-g 11
-
-
-
-sfdgsdfgsdfgsdfgsfgd

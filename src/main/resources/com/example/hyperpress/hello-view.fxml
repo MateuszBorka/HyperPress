@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<BorderPane fx:controller="com.example.hyperpress.huffman1.OpenController" prefHeight="675.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane fx:controller="com.example.hyperpress.huffman1.FileController" prefHeight="675.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <top>
       <AnchorPane prefHeight="23.0" prefWidth="600.0" style="-fx-background-color: gray;" BorderPane.alignment="CENTER">
          <children>
@@ -32,8 +32,8 @@
                            <bottom>
                               <AnchorPane  prefHeight="219.0" prefWidth="305.0" style="-fx-border-color: black; -fx-border-width: 2;" BorderPane.alignment="CENTER">
                                  <children>
-                                    <Button fx:id="open_file" layoutX="72.0" layoutY="29.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="161.0" text="Open file to read from" onAction="#onOpenFileToRead"/>
-                                    <Button layoutX="77.0" layoutY="127.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="151.0" text="Open file to write to" />
+                                    <Button fx:id="open_file_to_read" layoutX="72.0" layoutY="29.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="161.0" text="Open file to read from" onAction="#copyFileToRead"/>
+                                    <Button fx:id="open_file_to_write" layoutX="77.0" layoutY="127.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="151.0" text="Open file to write to" onAction="#copyFileToWrite"/>
                                  </children></AnchorPane>
                            </bottom>
                            <center>
@@ -82,7 +82,7 @@
                      <bottom>
                         <AnchorPane prefHeight="87.0" prefWidth="305.0" style="-fx-border-color: black; -fx-border-width: 2;" BorderPane.alignment="CENTER">
                            <children>
-                              <Button layoutX="64.0" layoutY="14.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="177.0" text="Start">
+                              <Button layoutX="64.0" layoutY="14.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="177.0" text="Start" onAction="#startProcess">
                                  <font>
                                     <Font size="23.0" />
                                  </font>
